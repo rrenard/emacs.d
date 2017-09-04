@@ -109,6 +109,9 @@
 (use-package rpm-spec-mode :ensure t :defer t)
 (use-package rust-mode :ensure t :defer t)
 (use-package toml-mode :ensure t :defer t)
+(use-package cmake :ensure t :defer t)
+(use-package puppet :ensure t :defer t)
+(use-package powershell :ensure t :defer t)
 
 
 ;; see https://github.com/gjstein/emacs.d/blob/master/config/init-10-face.el
