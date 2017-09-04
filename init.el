@@ -26,6 +26,7 @@
 
 (package-initialize)
 
+;; see https://github.com/gjstein/emacs.d/blob/master/init.el
 ;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -34,6 +35,9 @@
 ;; Enable use-package
 (eval-when-compile
 (require 'use-package))
+
+(require 'diminish) ;; if you use :diminish
+(require 'bind-key) ;; if you use any :bind variant
 
 
 (prefer-coding-system 'utf-8)
