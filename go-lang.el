@@ -8,6 +8,7 @@
   :init
   (use-package company-go :ensure t :defer t)
   (use-package go-guru :ensure t  :defer t )
+  (use-package go-errcheck :ensure t  :defer t )
   :config
   (setq gofmt-command "goimports")
   (add-hook 'before-save-hook 'gofmt-before-save)
