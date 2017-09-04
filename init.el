@@ -79,6 +79,8 @@
 ; default tramp to ssh instead of scp
 (setq tramp-default-method "ssh")
 
+(load-file (expand-file-name "magit.el" user-emacs-directory))
+
 (use-package markdown-mode
   :ensure t
   :defer t
@@ -89,12 +91,6 @@
          ("\\.txt\\'" . markdown-mode)
          )
   )
-
-(use-package magit
-  :ensure t
-  :defer t
-  :bind ("C-x g" . magit-status)
-)
 
 (use-package yaml-mode
   :ensure t
