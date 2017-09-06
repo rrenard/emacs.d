@@ -125,11 +125,11 @@
 (use-package puppet :ensure t :defer t)
 (use-package powershell :ensure t :defer t)
 
+;; https://github.com/dajva/rg.el
 (use-package rg
   :ensure t
   :defer t
-  :config
-  (global-set-key (kbd "M-s") 'rg)
+  :bind ("M-s" . rg)
   )
 
 ;; see https://github.com/gjstein/emacs.d/blob/master/config/init-10-face.el
