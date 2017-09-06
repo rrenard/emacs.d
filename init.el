@@ -40,6 +40,16 @@
 (require 'bind-key) ;; if you use any :bind variant
 
 
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
+;; server socket dir
+(setq server-socket-dir (format "~/tmp/emacs%d" (user-uid)))
+
+;; Keep my working directories clean please, thanks
+(setq backup-directory-alist (quote ((".*" . "~/tmp/emacs/backups/"))))
+
 (prefer-coding-system 'utf-8)
 (setq inhibit-startup-message t)
 
