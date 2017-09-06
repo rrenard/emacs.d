@@ -118,6 +118,10 @@
 (use-package dockerfile-mode :ensure t :defer t)
 (use-package rpm-spec-mode :ensure t :defer t)
 (use-package rust-mode :ensure t :defer t)
+(use-package flycheck-rust  :ensure t :defer t
+  :init
+  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
+  )
 (use-package toml-mode :ensure t :defer t)
 (use-package cmake :ensure t :defer t)
 (use-package puppet :ensure t :defer t)
