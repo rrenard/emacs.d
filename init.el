@@ -113,6 +113,12 @@
 (use-package puppet :ensure t :defer t)
 (use-package powershell :ensure t :defer t)
 
+(use-package rg
+  :ensure t
+  :defer t
+  :config
+  (global-set-key (kbd "M-s") 'rg)
+  )
 
 ;; see https://github.com/gjstein/emacs.d/blob/master/config/init-10-face.el
 (use-package monokai-theme
@@ -131,6 +137,15 @@
               (c-set-offset 'label 4))
             )
   )
+
+;; https://keramida.wordpress.com/2008/08/08/tweaking-shell-script-indentation-in-gnu-emacs/
+;; http://emacs.stackexchange.com/questions/24719/set-indentation-for-shell-script-function
+(add-hook 'sh-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode nil)
+            (setq sh-indentation 2)
+            (setq sh-basic-offset 2)))
+
 
 (use-package yasnippet
   :ensure t
