@@ -156,12 +156,7 @@
 
 (load-file (expand-file-name "go-lang.el" user-emacs-directory))
 
-(use-package powerline
-  :ensure t
-  :config
-  (powerline-default-theme)
-  (setq powerline-default-separator 'utf-8)
-  )
+(load-file (expand-file-name "powerline.el" user-emacs-directory))
 
 
 ;; see https://github.com/magnars/.emacs.d/blob/master/init.el
