@@ -121,8 +121,8 @@
 (load-file (expand-file-name "rust.el" user-emacs-directory))
 
 (use-package toml-mode :ensure t :defer t)
-(use-package cmake :ensure t :defer t)
-(use-package puppet :ensure t :defer t)
+(use-package cmake-mode :ensure t :defer t)
+(use-package puppet-mode :ensure t :defer t)
 (use-package powershell :ensure t :defer t)
 
 ;; https://github.com/dajva/rg.el
