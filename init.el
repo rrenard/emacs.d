@@ -11,7 +11,10 @@
 ;; https://github.com/mbriggs/.emacs.d
 ;; https://utcc.utoronto.ca/~cks/space/blog/programming/GoGocodeEmacsAutocompleteII
 
-;; Install use-package if necessary
+
+;; See https://github.com/jwiegley/use-package/issues/219 xuchunyang's comment
+
+;; Setup package.el
 (require 'package)
 (setq package-enable-at-startup nil)
 (setq package-archives '(
@@ -21,10 +24,8 @@
                          ;; ("elpy" . "http://jorgenschaefer.github.io/packages/")
                          ;; ("org" . "http://orgmode.org/elpa/")
                          ))
-
 (package-initialize)
 
-;; see https://github.com/gjstein/emacs.d/blob/master/init.el
 ;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
