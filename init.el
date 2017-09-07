@@ -14,15 +14,13 @@
 ;; Install use-package if necessary
 (require 'package)
 (setq package-enable-at-startup nil)
-(setq package-archives
-      (
-       append package-archives
-	      '(("melpa" . "http://melpa.org/packages/")
-		("marmalade" . "http://marmalade-repo.org/packages/")
-		("gnu" . "http://elpa.gnu.org/packages/")
-		;; ("org" . "http://orgmode.org/elpa/")
-		;;("elpy" . "http://jorgenschaefer.github.io/packages/")
-		)))
+(setq package-archives '(
+                         ("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")
+                         ;; ("marmalade" . "https://marmalade-repo.org/packages/")
+                         ;; ("elpy" . "http://jorgenschaefer.github.io/packages/")
+                         ;; ("org" . "http://orgmode.org/elpa/")
+                         ))
 
 (package-initialize)
 
