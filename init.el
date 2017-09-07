@@ -184,6 +184,12 @@
 
 (load-file (expand-file-name "powerline.el" user-emacs-directory))
 
+(use-package nov
+  :ensure t
+  :defer t
+  :init
+  (push '("\\.epub\\'" . nov-mode) auto-mode-alist)
+  )
 
 ;; see https://github.com/magnars/.emacs.d/blob/master/init.el
 ;; Keep emacs Custom-settings in separate file
