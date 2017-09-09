@@ -127,11 +127,7 @@
 (use-package powershell :ensure t :defer t)
 
 ;; https://github.com/dajva/rg.el
-(use-package rg
-  :ensure t
-  :defer t
-  :bind ("M-s" . rg)
-  )
+(use-package rg :ensure t :defer t :bind ("M-s" . rg))
 
 ;; see https://github.com/gjstein/emacs.d/blob/master/config/init-10-face.el
 (use-package monokai-theme
