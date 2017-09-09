@@ -94,6 +94,8 @@
 
 (load-file (expand-file-name "magit.el" user-emacs-directory))
 
+(use-package move-text :ensure t :config (move-text-default-bindings))
+
 (use-package markdown-mode
   :ensure t
   :defer t
