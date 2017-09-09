@@ -96,6 +96,9 @@
 
 (use-package move-text :ensure t :config (move-text-default-bindings))
 
+(use-package highlight-indent-guides :ensure t)
+;; might wanna see this one too https://github.com/antonj/Highlight-Indentation-for-Emacs
+
 (use-package markdown-mode
   :ensure t
   :defer t
