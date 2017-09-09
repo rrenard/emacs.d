@@ -44,7 +44,7 @@
   (server-start))
 
 ;; server socket dir
-(setq server-socket-dir (format "~/tmp/emacs%d" (user-uid)))
+;;(setq server-socket-dir (format "~/tmp/emacs%d" (user-uid)))
 
 ;; Keep my working directories clean please, thanks
 (setq backup-directory-alist (quote ((".*" . "~/tmp/emacs/backups/"))))
