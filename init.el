@@ -86,6 +86,9 @@
 (global-set-key (kbd "<f3>") 'linum-mode)
 (global-set-key (kbd "C-x C-b") 'bs-show)
 
+(setq calendar-week-start-day 1)
+;;(display-battery-mode)
+
 ;; see https://github.com/magnars/.emacs.d/blob/master/settings/key-bindings.el
 (windmove-default-keybindings) ;; Shift+direction
 
@@ -93,6 +96,7 @@
 (setq tramp-default-method "ssh")
 
 (load-file (expand-file-name "magit.el" user-emacs-directory))
+(load-file (expand-file-name "orgmode.el" user-emacs-directory))
 
 (use-package move-text :ensure t :config (move-text-default-bindings))
 
