@@ -202,6 +202,10 @@
 
 (load-file (expand-file-name "terraform.el" user-emacs-directory))
 
+(use-package pkgbuild-mode
+  :ensure t
+ )
+
 ;; see https://github.com/magnars/.emacs.d/blob/master/init.el
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
