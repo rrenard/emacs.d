@@ -162,6 +162,10 @@
             (setq sh-indentation 2)
             (setq sh-basic-offset 2)))
 
+(use-package systemd
+  :ensure t
+  :defer t
+  )
 
 (use-package yasnippet
   :ensure t
