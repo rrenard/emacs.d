@@ -196,6 +196,8 @@
   (push '("\\.epub\\'" . nov-mode) auto-mode-alist)
   )
 
+(load-file (expand-file-name "terraform.el" user-emacs-directory))
+
 ;; see https://github.com/magnars/.emacs.d/blob/master/init.el
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
